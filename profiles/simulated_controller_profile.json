@@ -1,0 +1,369 @@
+{
+  "algorithms": {
+    "attention_ppo": {
+      "mean_cpu_s": 0.0008,
+      "median_cpu_s": 0.0008,
+      "normalized_cycles": 1800000.0,
+      "p95_cpu_s": 0.0008,
+      "samples": 0,
+      "warmups": 0
+    },
+    "fodas": {
+      "mean_cpu_s": 0.0006,
+      "median_cpu_s": 0.0006,
+      "normalized_cycles": 1349999.9999999998,
+      "p95_cpu_s": 0.0006,
+      "samples": 0,
+      "warmups": 0
+    },
+    "random": {
+      "mean_cpu_s": 1e-05,
+      "median_cpu_s": 1e-05,
+      "normalized_cycles": 22500.000000000004,
+      "p95_cpu_s": 1e-05,
+      "samples": 0,
+      "warmups": 0
+    },
+    "relief": {
+      "mean_cpu_s": 0.0004,
+      "median_cpu_s": 0.0004,
+      "normalized_cycles": 900000.0,
+      "p95_cpu_s": 0.0004,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_2dp_fhs": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 0.0003697,
+          "median_cpu_s": 0.0003697,
+          "normalized_cycles": 831825.0,
+          "p95_cpu_s": 0.0003697,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.07084900000000001,
+          "median_cpu_s": 0.07084900000000001,
+          "normalized_cycles": 159410250.00000003,
+          "p95_cpu_s": 0.07084900000000001,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 0.0012958000000000002,
+          "median_cpu_s": 0.0012958000000000002,
+          "normalized_cycles": 2915550.0000000005,
+          "p95_cpu_s": 0.0012958000000000002,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 0.0047414,
+          "median_cpu_s": 0.0047414,
+          "normalized_cycles": 10668150.0,
+          "p95_cpu_s": 0.0047414,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 0.018068,
+          "median_cpu_s": 0.018068,
+          "normalized_cycles": 40653000.0,
+          "p95_cpu_s": 0.018068,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.01044,
+      "median_cpu_s": 0.01044,
+      "normalized_cycles": 23490000.0,
+      "p95_cpu_s": 0.01044,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_3d_pos": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 0.0005473,
+          "median_cpu_s": 0.0005473,
+          "normalized_cycles": 1231425.0,
+          "p95_cpu_s": 0.0005473,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.11231999999999999,
+          "median_cpu_s": 0.11231999999999999,
+          "normalized_cycles": 252719999.99999997,
+          "p95_cpu_s": 0.11231999999999999,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 0.0019728000000000002,
+          "median_cpu_s": 0.0019728000000000002,
+          "normalized_cycles": 4438800.000000001,
+          "p95_cpu_s": 0.0019728000000000002,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 0.0073642,
+          "median_cpu_s": 0.0073642,
+          "normalized_cycles": 16569450.000000002,
+          "p95_cpu_s": 0.0073642,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 0.028617999999999998,
+          "median_cpu_s": 0.028617999999999998,
+          "normalized_cycles": 64390499.99999999,
+          "p95_cpu_s": 0.028617999999999998,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.01651,
+      "median_cpu_s": 0.01651,
+      "normalized_cycles": 37147500.0,
+      "p95_cpu_s": 0.01651,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_fu_serve": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 6.55e-05,
+          "median_cpu_s": 6.55e-05,
+          "normalized_cycles": 147375.0,
+          "p95_cpu_s": 6.55e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.0099184,
+          "median_cpu_s": 0.0099184,
+          "normalized_cycles": 22316400.0,
+          "p95_cpu_s": 0.0099184,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 0.0001996,
+          "median_cpu_s": 0.0001996,
+          "normalized_cycles": 449100.0,
+          "p95_cpu_s": 0.0001996,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 0.0006927,
+          "median_cpu_s": 0.0006927,
+          "normalized_cycles": 1558575.0,
+          "p95_cpu_s": 0.0006927,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 0.0024990999999999998,
+          "median_cpu_s": 0.0024990999999999998,
+          "normalized_cycles": 5622974.999999999,
+          "p95_cpu_s": 0.0024990999999999998,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.00155,
+      "median_cpu_s": 0.00155,
+      "normalized_cycles": 3487500.0,
+      "p95_cpu_s": 0.00155,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_with_spotis": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 6.191399999999999e-05,
+          "median_cpu_s": 6.191399999999999e-05,
+          "normalized_cycles": 139306.49999999997,
+          "p95_cpu_s": 6.191399999999999e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.000120768,
+          "median_cpu_s": 0.000120768,
+          "normalized_cycles": 271728.0,
+          "p95_cpu_s": 0.000120768,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 6.5688e-05,
+          "median_cpu_s": 6.5688e-05,
+          "normalized_cycles": 147798.0,
+          "p95_cpu_s": 6.5688e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 7.517400000000001e-05,
+          "median_cpu_s": 7.517400000000001e-05,
+          "normalized_cycles": 169141.50000000003,
+          "p95_cpu_s": 7.517400000000001e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 8.874e-05,
+          "median_cpu_s": 8.874e-05,
+          "normalized_cycles": 199665.0,
+          "p95_cpu_s": 8.874e-05,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.00165,
+      "median_cpu_s": 0.00165,
+      "normalized_cycles": 3712500.0,
+      "p95_cpu_s": 0.00165,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_without_spotis": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 6.07e-05,
+          "median_cpu_s": 6.07e-05,
+          "normalized_cycles": 136575.0,
+          "p95_cpu_s": 6.07e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.0001184,
+          "median_cpu_s": 0.0001184,
+          "normalized_cycles": 266400.0,
+          "p95_cpu_s": 0.0001184,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 6.44e-05,
+          "median_cpu_s": 6.44e-05,
+          "normalized_cycles": 144899.99999999997,
+          "p95_cpu_s": 6.44e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 7.37e-05,
+          "median_cpu_s": 7.37e-05,
+          "normalized_cycles": 165825.0,
+          "p95_cpu_s": 7.37e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 8.7e-05,
+          "median_cpu_s": 8.7e-05,
+          "normalized_cycles": 195750.0,
+          "p95_cpu_s": 8.7e-05,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.00065,
+      "median_cpu_s": 0.00065,
+      "normalized_cycles": 1462500.0,
+      "p95_cpu_s": 0.00065,
+      "samples": 0,
+      "warmups": 0
+    }
+  },
+  "assumptions": {
+    "empirical_hardware_measurement": false,
+    "service_time_ms": {
+      "attention_ppo": 0.8,
+      "fodas": 0.6,
+      "random": 0.01,
+      "relief": 0.4,
+      "stage1_2dp_fhs": 10.44,
+      "stage1_3d_pos": 16.51,
+      "stage1_fu_serve": 1.55,
+      "stage1_with_spotis": 1.65,
+      "stage1_without_spotis": 0.65
+    },
+    "source": "declared simulation parameters in config.py",
+    "stage1_service_time_ms_by_n_fog": {
+      "stage1_2dp_fhs": {
+        "10": 0.3697,
+        "160": 70.849,
+        "20": 1.2958,
+        "40": 4.7414,
+        "80": 18.068
+      },
+      "stage1_3d_pos": {
+        "10": 0.5473,
+        "160": 112.32,
+        "20": 1.9728,
+        "40": 7.3642,
+        "80": 28.618
+      },
+      "stage1_fu_serve": {
+        "10": 0.0655,
+        "160": 9.9184,
+        "20": 0.1996,
+        "40": 0.6927,
+        "80": 2.4991
+      },
+      "stage1_with_spotis": {
+        "10": 0.061914,
+        "160": 0.120768,
+        "20": 0.065688,
+        "40": 0.075174,
+        "80": 0.08874
+      },
+      "stage1_without_spotis": {
+        "10": 0.0607,
+        "160": 0.1184,
+        "20": 0.0644,
+        "40": 0.0737,
+        "80": 0.087
+      }
+    },
+    "units": "milliseconds converted to cycles at reference_frequency_hz"
+  },
+  "created_utc": "not_applicable_deterministic_model",
+  "execution_model_version": "event-cpu-v2.0.0",
+  "measurement": {
+    "clock": "configured_deterministic_model",
+    "samples_per_algorithm": 0,
+    "warmups_per_algorithm": 0
+  },
+  "profile_hash": "6d3730bb1d5461d29978a7eea23c56b34073423fd4de0e765ca2c79109474e9e",
+  "profile_kind": "simulated_model",
+  "runtime": {
+    "numpy": "2.4.4",
+    "python": "3.14.4",
+    "pytorch": "2.12.0"
+  },
+  "schema_version": "controller-cost-profile-v2",
+  "target": {
+    "clocks": "service scales as cycles / selected UAV frequency",
+    "jetpack": "not_applicable",
+    "machine": "simulation",
+    "model": "simulated heterogeneous fog-controller CPU",
+    "power_mode": "not_applicable",
+    "reference_frequency_hz": 2250000000.0
+  },
+  "thread_settings": {
+    "mkl_num_threads": "",
+    "omp_num_threads": "",
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 1
+  },
+  "workload_hash": "8c83a86bf0b3a80faca732fee4610f0032a44e8607b3403d111db21af98fdd2f"
+}
