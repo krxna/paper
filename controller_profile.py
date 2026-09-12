@@ -524,9 +524,10 @@ def validate_profile(profile: Mapping, *, allow_test_profile: bool = False) -> D
             from config import PROFILE_FOG_SIZES
             by_n_fog = stats.get("by_n_fog")
             expected_sizes = {str(n) for n in PROFILE_FOG_SIZES}
-            if not isinstance(by_n_fog, Mapping) or set(by_n_fog) != expected_sizes:
+            if (not isinstance(by_n_fog, Mapping)
+                    or not expected_sizes.issubset(by_n_fog)):
                 raise ProfileValidationError(
-                    f"{name} by_n_fog must cover {sorted(expected_sizes)}")
+                    f"{name} by_n_fog must cover at least {sorted(expected_sizes)}")
             for n_fog, sized_stats in by_n_fog.items():
                 for key in (
                     "samples", "warmups", "mean_cpu_s", "median_cpu_s",

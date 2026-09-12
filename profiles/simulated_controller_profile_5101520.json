@@ -1,0 +1,459 @@
+{
+  "algorithms": {
+    "attention_ppo": {
+      "mean_cpu_s": 0.0008,
+      "median_cpu_s": 0.0008,
+      "normalized_cycles": 1800000.0,
+      "p95_cpu_s": 0.0008,
+      "samples": 0,
+      "warmups": 0
+    },
+    "fodas": {
+      "mean_cpu_s": 0.0006,
+      "median_cpu_s": 0.0006,
+      "normalized_cycles": 1349999.9999999998,
+      "p95_cpu_s": 0.0006,
+      "samples": 0,
+      "warmups": 0
+    },
+    "random": {
+      "mean_cpu_s": 1e-05,
+      "median_cpu_s": 1e-05,
+      "normalized_cycles": 22500.000000000004,
+      "p95_cpu_s": 1e-05,
+      "samples": 0,
+      "warmups": 0
+    },
+    "relief": {
+      "mean_cpu_s": 0.0004,
+      "median_cpu_s": 0.0004,
+      "normalized_cycles": 900000.0,
+      "p95_cpu_s": 0.0004,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_2dp_fhs": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 0.0003221,
+          "median_cpu_s": 0.0003221,
+          "normalized_cycles": 724725.0,
+          "p95_cpu_s": 0.0003221,
+          "samples": 0,
+          "warmups": 0
+        },
+        "15": {
+          "mean_cpu_s": 0.0006562,
+          "median_cpu_s": 0.0006562,
+          "normalized_cycles": 1476450.0,
+          "p95_cpu_s": 0.0006562,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.07084900000000001,
+          "median_cpu_s": 0.07084900000000001,
+          "normalized_cycles": 159410250.00000003,
+          "p95_cpu_s": 0.07084900000000001,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 0.0010708,
+          "median_cpu_s": 0.0010708,
+          "normalized_cycles": 2409300.0,
+          "p95_cpu_s": 0.0010708,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 0.0047414,
+          "median_cpu_s": 0.0047414,
+          "normalized_cycles": 10668150.0,
+          "p95_cpu_s": 0.0047414,
+          "samples": 0,
+          "warmups": 0
+        },
+        "5": {
+          "mean_cpu_s": 0.0001128,
+          "median_cpu_s": 0.0001128,
+          "normalized_cycles": 253800.0,
+          "p95_cpu_s": 0.0001128,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 0.018068,
+          "median_cpu_s": 0.018068,
+          "normalized_cycles": 40653000.0,
+          "p95_cpu_s": 0.018068,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.01044,
+      "median_cpu_s": 0.01044,
+      "normalized_cycles": 23490000.0,
+      "p95_cpu_s": 0.01044,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_3d_pos": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 0.0004939,
+          "median_cpu_s": 0.0004939,
+          "normalized_cycles": 1111275.0,
+          "p95_cpu_s": 0.0004939,
+          "samples": 0,
+          "warmups": 0
+        },
+        "15": {
+          "mean_cpu_s": 0.0010287999999999999,
+          "median_cpu_s": 0.0010287999999999999,
+          "normalized_cycles": 2314799.9999999995,
+          "p95_cpu_s": 0.0010287999999999999,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.11231999999999999,
+          "median_cpu_s": 0.11231999999999999,
+          "normalized_cycles": 252719999.99999997,
+          "p95_cpu_s": 0.11231999999999999,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 0.0017661999999999999,
+          "median_cpu_s": 0.0017661999999999999,
+          "normalized_cycles": 3973949.9999999995,
+          "p95_cpu_s": 0.0017661999999999999,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 0.0073642,
+          "median_cpu_s": 0.0073642,
+          "normalized_cycles": 16569450.000000002,
+          "p95_cpu_s": 0.0073642,
+          "samples": 0,
+          "warmups": 0
+        },
+        "5": {
+          "mean_cpu_s": 0.0001591,
+          "median_cpu_s": 0.0001591,
+          "normalized_cycles": 357975.0,
+          "p95_cpu_s": 0.0001591,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 0.028617999999999998,
+          "median_cpu_s": 0.028617999999999998,
+          "normalized_cycles": 64390499.99999999,
+          "p95_cpu_s": 0.028617999999999998,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.01651,
+      "median_cpu_s": 0.01651,
+      "normalized_cycles": 37147500.0,
+      "p95_cpu_s": 0.01651,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_fu_serve": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 5.3e-05,
+          "median_cpu_s": 5.3e-05,
+          "normalized_cycles": 119250.0,
+          "p95_cpu_s": 5.3e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "15": {
+          "mean_cpu_s": 0.00010159999999999999,
+          "median_cpu_s": 0.00010159999999999999,
+          "normalized_cycles": 228599.99999999997,
+          "p95_cpu_s": 0.00010159999999999999,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.0099184,
+          "median_cpu_s": 0.0099184,
+          "normalized_cycles": 22316400.0,
+          "p95_cpu_s": 0.0099184,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 0.0001522,
+          "median_cpu_s": 0.0001522,
+          "normalized_cycles": 342450.00000000006,
+          "p95_cpu_s": 0.0001522,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 0.0006927,
+          "median_cpu_s": 0.0006927,
+          "normalized_cycles": 1558575.0,
+          "p95_cpu_s": 0.0006927,
+          "samples": 0,
+          "warmups": 0
+        },
+        "5": {
+          "mean_cpu_s": 1.84e-05,
+          "median_cpu_s": 1.84e-05,
+          "normalized_cycles": 41400.0,
+          "p95_cpu_s": 1.84e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 0.0024990999999999998,
+          "median_cpu_s": 0.0024990999999999998,
+          "normalized_cycles": 5622974.999999999,
+          "p95_cpu_s": 0.0024990999999999998,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.00155,
+      "median_cpu_s": 0.00155,
+      "normalized_cycles": 3487500.0,
+      "p95_cpu_s": 0.00155,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_with_spotis": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 9.120000000000001e-05,
+          "median_cpu_s": 9.120000000000001e-05,
+          "normalized_cycles": 205200.00000000003,
+          "p95_cpu_s": 9.120000000000001e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "15": {
+          "mean_cpu_s": 0.0001043,
+          "median_cpu_s": 0.0001043,
+          "normalized_cycles": 234675.0,
+          "p95_cpu_s": 0.0001043,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.000120768,
+          "median_cpu_s": 0.000120768,
+          "normalized_cycles": 271728.0,
+          "p95_cpu_s": 0.000120768,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 0.0001159,
+          "median_cpu_s": 0.0001159,
+          "normalized_cycles": 260775.0,
+          "p95_cpu_s": 0.0001159,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 7.517400000000001e-05,
+          "median_cpu_s": 7.517400000000001e-05,
+          "normalized_cycles": 169141.50000000003,
+          "p95_cpu_s": 7.517400000000001e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "5": {
+          "mean_cpu_s": 7.8e-05,
+          "median_cpu_s": 7.8e-05,
+          "normalized_cycles": 175500.0,
+          "p95_cpu_s": 7.8e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 8.874e-05,
+          "median_cpu_s": 8.874e-05,
+          "normalized_cycles": 199665.0,
+          "p95_cpu_s": 8.874e-05,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.00165,
+      "median_cpu_s": 0.00165,
+      "normalized_cycles": 3712500.0,
+      "p95_cpu_s": 0.00165,
+      "samples": 0,
+      "warmups": 0
+    },
+    "stage1_without_spotis": {
+      "by_n_fog": {
+        "10": {
+          "mean_cpu_s": 7.879999999999999e-05,
+          "median_cpu_s": 7.879999999999999e-05,
+          "normalized_cycles": 177299.99999999997,
+          "p95_cpu_s": 7.879999999999999e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "15": {
+          "mean_cpu_s": 9.15e-05,
+          "median_cpu_s": 9.15e-05,
+          "normalized_cycles": 205875.0,
+          "p95_cpu_s": 9.15e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "160": {
+          "mean_cpu_s": 0.0001184,
+          "median_cpu_s": 0.0001184,
+          "normalized_cycles": 266400.0,
+          "p95_cpu_s": 0.0001184,
+          "samples": 0,
+          "warmups": 0
+        },
+        "20": {
+          "mean_cpu_s": 0.0001031,
+          "median_cpu_s": 0.0001031,
+          "normalized_cycles": 231975.0,
+          "p95_cpu_s": 0.0001031,
+          "samples": 0,
+          "warmups": 0
+        },
+        "40": {
+          "mean_cpu_s": 7.37e-05,
+          "median_cpu_s": 7.37e-05,
+          "normalized_cycles": 165825.0,
+          "p95_cpu_s": 7.37e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "5": {
+          "mean_cpu_s": 6.560000000000001e-05,
+          "median_cpu_s": 6.560000000000001e-05,
+          "normalized_cycles": 147600.00000000003,
+          "p95_cpu_s": 6.560000000000001e-05,
+          "samples": 0,
+          "warmups": 0
+        },
+        "80": {
+          "mean_cpu_s": 8.7e-05,
+          "median_cpu_s": 8.7e-05,
+          "normalized_cycles": 195750.0,
+          "p95_cpu_s": 8.7e-05,
+          "samples": 0,
+          "warmups": 0
+        }
+      },
+      "mean_cpu_s": 0.00065,
+      "median_cpu_s": 0.00065,
+      "normalized_cycles": 1462500.0,
+      "p95_cpu_s": 0.00065,
+      "samples": 0,
+      "warmups": 0
+    }
+  },
+  "assumptions": {
+    "empirical_hardware_measurement": false,
+    "service_time_ms": {
+      "attention_ppo": 0.8,
+      "fodas": 0.6,
+      "random": 0.01,
+      "relief": 0.4,
+      "stage1_2dp_fhs": 10.44,
+      "stage1_3d_pos": 16.51,
+      "stage1_fu_serve": 1.55,
+      "stage1_with_spotis": 1.65,
+      "stage1_without_spotis": 0.65
+    },
+    "source": "declared simulation parameters in config.py",
+    "stage1_service_time_ms_by_n_fog": {
+      "stage1_2dp_fhs": {
+        "10": 0.3221,
+        "15": 0.6562,
+        "160": 70.849,
+        "20": 1.0708,
+        "40": 4.7414,
+        "5": 0.1128,
+        "80": 18.068
+      },
+      "stage1_3d_pos": {
+        "10": 0.4939,
+        "15": 1.0288,
+        "160": 112.32,
+        "20": 1.7662,
+        "40": 7.3642,
+        "5": 0.1591,
+        "80": 28.618
+      },
+      "stage1_fu_serve": {
+        "10": 0.053,
+        "15": 0.1016,
+        "160": 9.9184,
+        "20": 0.1522,
+        "40": 0.6927,
+        "5": 0.0184,
+        "80": 2.4991
+      },
+      "stage1_with_spotis": {
+        "10": 0.0912,
+        "15": 0.1043,
+        "160": 0.120768,
+        "20": 0.1159,
+        "40": 0.075174,
+        "5": 0.078,
+        "80": 0.08874
+      },
+      "stage1_without_spotis": {
+        "10": 0.0788,
+        "15": 0.0915,
+        "160": 0.1184,
+        "20": 0.1031,
+        "40": 0.0737,
+        "5": 0.0656,
+        "80": 0.087
+      }
+    },
+    "units": "milliseconds converted to cycles at reference_frequency_hz"
+  },
+  "created_utc": "not_applicable_deterministic_model",
+  "execution_model_version": "event-cpu-v2.0.0",
+  "measurement": {
+    "clock": "configured_deterministic_model",
+    "samples_per_algorithm": 0,
+    "warmups_per_algorithm": 0
+  },
+  "profile_hash": "f157fbeace525f64d7a78baf8d503d2c14093187dbe7d4a8fc703908ecdb3686",
+  "profile_kind": "simulated_model",
+  "runtime": {
+    "numpy": "2.4.4",
+    "python": "3.14.4",
+    "pytorch": "2.12.0"
+  },
+  "schema_version": "controller-cost-profile-v2",
+  "target": {
+    "clocks": "service scales as cycles / selected UAV frequency",
+    "jetpack": "not_applicable",
+    "machine": "simulation",
+    "model": "simulated heterogeneous fog-controller CPU",
+    "power_mode": "not_applicable",
+    "reference_frequency_hz": 2250000000.0
+  },
+  "thread_settings": {
+    "mkl_num_threads": "",
+    "omp_num_threads": "",
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 1
+  },
+  "workload_hash": "8c83a86bf0b3a80faca732fee4610f0032a44e8607b3403d111db21af98fdd2f"
+}

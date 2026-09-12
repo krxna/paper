@@ -44,7 +44,7 @@ def _sweep(fog_sizes: str, arrival_rates: str, episode_seconds: float,
            ppo_episodes: int, trials: int, failure_s: float | None) -> dict:
     from experiments import HANDOVER_SETUP_MS
     return dict(
-        arrival_rates=[float(v) for v in arrival_rates.split(",")],
+        arrival_rates=[float(v) for v in arrival_rates.split(",") if v],
         fog_sizes=[int(v) for v in fog_sizes.split(",")],
         scale_arrival_rate=180.0, episode_seconds=episode_seconds,
         trials=trials, seed0=SEED0, ppo_episodes=ppo_episodes,
@@ -68,16 +68,18 @@ def _metadata(sweep: dict) -> dict:
 def _enter():
     """Import the simulation with threads pinned and the profile verified."""
     import os
+    import shutil
     import sys
     sys.path.insert(0, "/workspace")
     os.chdir("/workspace")
     import torch
     torch.set_num_threads(1)
-    profile_path = "profiles/simulated_controller_profile.json"
+    profile_path = "profiles/simulated_controller_profile_5101520.json"
     assert os.path.exists(profile_path), (
         "controller profile missing -> require_profile would silently "
         "re-benchmark on Modal hardware and every container would get a "
         "different Stage-1 price table")
+    shutil.copyfile(profile_path, "profiles/simulated_controller_profile.json")
     from controller_profile import require_profile, workload_hash
     return require_profile(), workload_hash()
 
@@ -139,11 +141,11 @@ def merge(spec: dict) -> str:
     # Only the container running trial 0 populates representatives
     # (fog_head_experiments.py gates on `trial == 0`); the rest return {}.
     reps = {k: v for p in payloads for k, v in p["representatives"].items()}
-    assert set(reps) == set(fhe.POLICIES), (
-        f"representatives incomplete: {sorted(reps)} -- fh_fig6/fh_fig7 would be "
-        "SILENTLY SKIPPED. Trial 0's container must have succeeded.")
-
     sweep = _sweep(**spec["sweep"])
+    if sweep["arrival_rates"]:
+        assert set(reps) == set(fhe.POLICIES), (
+            f"representatives incomplete: {sorted(reps)} -- fh_fig6/fh_fig7 would be "
+            "SILENTLY SKIPPED. Trial 0's container must have succeeded.")
     meta = _metadata(sweep)
     meta["completed_trials"] = len(payloads)
     meta["status"] = "complete"
@@ -151,14 +153,15 @@ def merge(spec: dict) -> str:
     fhe.OUT_DIR = str(run_dir / "final")
     os.makedirs(fhe.OUT_DIR, exist_ok=True)
     fhe._write_summary(rows, meta)
-    fhe._write_json_atomic(
-        os.path.join(fhe.OUT_DIR, "fog_head_representatives.json"), reps)
-    fhe.make_figures(rows, reps, spec.get("bootstrap_samples", 2000))
-
-    figs = sorted(os.path.basename(f)
-                  for f in glob.glob(os.path.join(fhe.OUT_DIR, "fh_fig*.png")))
-    expected = 8 if sweep["head_failure_s"] is not None else 7
-    assert len(figs) == expected, f"expected {expected} figures, got {figs}"
+    figs = []
+    if sweep["arrival_rates"]:
+        fhe._write_json_atomic(
+            os.path.join(fhe.OUT_DIR, "fog_head_representatives.json"), reps)
+        fhe.make_figures(rows, reps, spec.get("bootstrap_samples", 2000))
+        figs = sorted(os.path.basename(f)
+                      for f in glob.glob(os.path.join(fhe.OUT_DIR, "fh_fig*.png")))
+        expected = 8 if sweep["head_failure_s"] is not None else 7
+        assert len(figs) == expected, f"expected {expected} figures, got {figs}"
 
     n_cond = (len(sweep["fog_sizes"]) + len(sweep["arrival_rates"])
               + int(sweep["head_failure_s"] is not None))
@@ -180,7 +183,7 @@ def run_host_timing(run_id: str) -> str:
     with timing_path.open("w") as stream:
         subprocess.run(
             ["python", "/workspace/bench_controller_paths.py",
-             "--fog-sizes", "10,20,40,80,160",
+             "--fog-sizes", "5,10,15,20",
              "--warmups", "100", "--samples", "1000"],
             cwd="/workspace", stdout=stream, check=True)
     results.commit()
@@ -213,6 +216,9 @@ PRESETS = {
                  arrival_rates="60,120,180,240,300", failure_s=5.0),
     "endurance": dict(trials=20, ppo_episodes=50, episode_seconds=200.0,
                       fog_sizes="20", arrival_rates="60", failure_s=None),
+    "fig3_5101520": dict(trials=20, ppo_episodes=50, episode_seconds=10.0,
+                          fog_sizes="5,10,15,20", arrival_rates="",
+                          failure_s=None),
 }
 
 
