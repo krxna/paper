@@ -2,6 +2,7 @@
 %  Comparison of the proposed method with existing methods
 %  Requires: \usepackage{amssymb}   % \checkmark
 %            \usepackage{multirow}  % grouped header
+%            \usepackage{array}     % >{...}p{} column
 %  Symbols:  \checkmark = considered / supported,  $\times$ = not considered
 % =====================================================================
 \begin{table*}[!t]
@@ -11,16 +12,15 @@
 \centering
 \footnotesize
 \renewcommand{\arraystretch}{1.25}
-\setlength{\tabcolsep}{5pt}
-\begin{tabular}{p{5.2cm}cccc|cccc}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{>{\raggedright\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000}p{4.0cm}cccc|cccc}
 \hline
 \multirow{2}{*}{\textbf{Existing Methods}} &
 \multicolumn{4}{c|}{\textbf{Parameters}} &
 \multicolumn{4}{c}{\textbf{Suitability}} \\
 \cline{2-5} \cline{6-9}
-\rule{0pt}{2.8ex} & Delay & Energy & Cost & \shortstack{Relia-\\bility} & UAV &
-   \shortstack{Fog\\Selection} & \shortstack{Distri-\\bution} &
-   \shortstack{Fault\\Tolerance} \\
+\rule{0pt}{2.6ex} & Delay & Energy & Cost & Reliability & UAV &
+   Fog Selection & Distribution & Fault Tolerance \\
 \hline
 FU-Serve
   & \checkmark & \checkmark & $\times$ & $\times$ & \checkmark & \checkmark & $\times$ & $\times$ \\
