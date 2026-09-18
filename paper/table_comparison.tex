@@ -1,0 +1,50 @@
+% =====================================================================
+%  Comparison of the proposed method with existing methods
+%  Requires: \usepackage{amssymb}   % \checkmark
+%            \usepackage{multirow}  % grouped header
+%            \usepackage{array}     % >{...}p{} column
+%  Symbols:  \checkmark = considered / supported,  $\times$ = not considered
+% =====================================================================
+\begin{table*}[!t]
+\caption{Comparison of the Proposed Method With Existing Methods
+(\checkmark: Explicitly Considered, $\times$: Not Considered)}
+\label{tab:comparison}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{>{\raggedright\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000}p{4.0cm}cccc|cccc}
+\hline
+\multirow{2}{*}{\textbf{Existing Methods}} &
+\multicolumn{4}{c|}{\textbf{Parameters}} &
+\multicolumn{4}{c}{\textbf{Suitability}} \\
+\cline{2-5} \cline{6-9}
+\rule{0pt}{2.6ex} & Delay & Energy & Cost & Reliability & UAV &
+   Fog Selection & Distribution & Fault Tolerance \\
+\hline
+FU-Serve
+  & \checkmark & \checkmark & $\times$ & $\times$ & \checkmark & \checkmark & $\times$ & $\times$ \\
+Con-Fog
+  & \checkmark & \checkmark & \checkmark & $\times$ & \checkmark & \checkmark & $\times$ & $\times$ \\
+2DP-FHS
+  & \checkmark & $\times$ & $\times$ & $\times$ & $\times$ & \checkmark & $\times$ & \checkmark \\
+3D-POS
+  & \checkmark & \checkmark & $\times$ & $\times$ & $\times$ & \checkmark & $\times$ & \checkmark \\
+FODAS
+  & \checkmark & \checkmark & $\times$ & $\times$ & $\times$ & \checkmark & \checkmark & $\times$ \\
+ReLIEF
+  & \checkmark & $\times$ & $\times$ & \checkmark & $\times$ & \checkmark & \checkmark & \checkmark \\
+An efficient master head selection for multi-EEG to multi-fog IoT network using 6G-driven FaaS
+  & \checkmark & \checkmark & $\times$ & $\times$ & $\times$ & \checkmark & \checkmark & \checkmark \\
+F2E: fog-enabled EEG architecture for healthcare services and computing
+  & \checkmark & \checkmark & \checkmark & $\times$ & $\times$ & \checkmark & $\times$ & $\times$ \\
+Delay-Energy Aware Dynamic Master Head Selection in Intelligent Healthcare IoT Networks
+  & \checkmark & \checkmark & $\times$ & $\times$ & $\times$ & \checkmark & $\times$ & $\times$ \\
+Computation Offloading Optimization for UAV-Based Cloud-Edge Collaborative Task Scheduling Strategy
+  & \checkmark & \checkmark & $\times$ & $\times$ & \checkmark & $\times$ & \checkmark & $\times$ \\
+\textbf{Proposed Method}
+  & \textbf{\checkmark} & \textbf{\checkmark} & \textbf{\checkmark} & \textbf{\checkmark}
+  & \textbf{\checkmark} & \textbf{\checkmark} & \textbf{\checkmark} & \textbf{\checkmark} \\
+\hline
+\end{tabular}
+\end{table*}
