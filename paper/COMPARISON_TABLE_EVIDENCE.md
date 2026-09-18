@@ -12,7 +12,7 @@ fixed by specification and were not re-derived.
 | Existing Methods | Delay | Energy | Cost | Reliability | UAV | Fog Selection | Distribution | Fault Tolerance |
 |---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | FU-Serve | ✓ | ✓ | ✗ | ✗ | ✓ | ✓ | ✗ | ✗ |
-| Con-fog | ✓ | ✓ | ✓ | ✗ | ✓ | ✓ | ✓ | ✗ |
+| Con-Fog | ✓ | ✓ | ✓ | ✗ | ✓ | ✓ | ✗ | ✗ |
 | 2DP-FHS | ✓ | ✗ | ✗ | ✗ | ✗ | ✓ | ✗ | ✓ |
 | 3D-POS | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | ✗ | ✓ |
 | FODAS | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | ✓ | ✗ |
@@ -28,7 +28,7 @@ fixed by specification and were not re-derived.
 | # | Method | Paper / venue | File in repo |
 |---|---|---|---|
 | 1 | FU-Serve | I. Raju, A. Roy, "FU-Serve: Fog-enabled UAV-as-a-Service for IoT Applications," IEEE GLOBECOM 2023, DOI 10.1109/GLOBECOM54140.2023.10437547 | `FU-Serve_Fog-Enabled_UAV-as-a-Service_for_IoT_Applications.pdf` |
-| 2 | Con-fog | R. Imandi, A. Roy, K. Sethi, P. K. B. N., M. Guizani, "Con-Fog: Consensus-Driven Fog Node Selection in FU-Serve Platform for IoT Applications," IEEE IoT-J, vol. 12, no. 13, 2025, DOI 10.1109/JIOT.2025.3557858 | `Con-Fog_Consensus-Driven_Fog_Node_Selection_in_FU-Serve_Platform_for_IoT_Applications.pdf` |
+| 2 | Con-Fog | R. Imandi, A. Roy, K. Sethi, P. K. B. N., M. Guizani, "Con-Fog: Consensus-Driven Fog Node Selection in FU-Serve Platform for IoT Applications," IEEE IoT-J, vol. 12, no. 13, 2025, DOI 10.1109/JIOT.2025.3557858 | `Con-Fog_Consensus-Driven_Fog_Node_Selection_in_FU-Serve_Platform_for_IoT_Applications.pdf` |
 | 3 | 2DP-FHS | S. H. Kurra, R. K. Rath, S. R. Sreeja, "2DP-FHS: 2D Pareto Optimized Fog Head Selection for Multiple EEG Healthcare Data Analysis and Computations," ICACDS 2024, CCIS 2194, pp. 58–68, DOI 10.1007/978-3-031-70906-7_6 | `2DP-FHS 2D Pareto Optimized Fog Head.pdf` |
 | 4 | 3D-POS | E. S. S. Kaushal, R. K. Rath, S. R. Sreeja, A. Hazra, "3D-POS: 3D Pareto Optimized Head Selection for Fog-enabled Smart EEG Healthcare IoT" | `3D-POS 3D Pareto Optimized Head Selection.pdf` |
 | 5 | FODAS | G. Nagabushnam, Y. Choi, K. H. Kim, "FODAS: A Novel Reinforcement Learning Approach for Efficient Task Scheduling in Fog Computing Network," IEEE FMEC 2024, DOI 10.1109/FMEC62297.2024.10710250 | `FODAS_A_Novel_Reinforcement_Learning_Approach...pdf` |
@@ -48,13 +48,13 @@ fixed by specification and were not re-derived.
 | FU-Serve | Fog Selection ✓ | "Optimal Dynamic Fog Node Selection": fitness `D = PCF + CCF` maximized by a Genetic Algorithm (Eq. 12) to elect the fog UAV. | §V |
 | FU-Serve | Cost ✗ | Rent / monetary profit appear only in the descriptive "business view"; no cost term exists in the objective (Eq. 12) or in the evaluation. | §III, §V |
 | FU-Serve | Fault Tolerance ✗ | Re-election is triggered by *energy depletion*, not by node or link failure; no backup, replication, or failover mechanism. | §III (fog layer) |
-| Con-fog | Delay ✓ | Proximity constraint (Eq. 6) minimizes distance "to reduce transmission latency"; Theorem on latency reduction; "Transmission Latency" is a primary evaluation metric. | §III-C, §IV-D, §V |
-| Con-fog | Energy ✓ | Effective Residual Energy `E_eff` (Eq. 11) is a term of the utility `U_i,j` (Eq. 12); energy constraint (Eq. 5); "Energy Consumption" evaluated. | §III, §IV, §V |
-| Con-fog | Cost ✓ | Explicit cost objective `arg min Z = ΣΣ c(u_i,f_j)·x_ij + Σ p(1−Σx_ij) − Σ E_j^{f,res}·x_ij` (Eq. 1) where `c(u_i,f_j)` is the communication cost and `p` the unassigned-UAV penalty. | §III-B |
-| Con-fog | UAV ✓ | UAVs are the clients and the dynamic fog nodes of the FU-Serve platform. | §I, §III-A |
-| Con-fog | Fog Selection ✓ | Consensus/social-choice fog node selection: utility values → per-UAV ranking → consensus ranking → selected fog node (Algorithm 1). | §IV-A |
-| Con-fog | Distribution ✓ | Best-fit (bin-packing) allocation of UAV workloads across fog nodes under the capacity constraint `Σ R_i^{u,req}·x_ij ≤ T·R_j^{f,cur}` (Eq. 4, Algorithm 2); "number of unassigned UAVs" evaluated. | §III-C, §IV-B, §V |
-| Con-fog | Reliability ✗ | The link-quality index is SNR (Eqs. 9–10); "network reliability" appears only as a qualitative remark. No failure probability / availability / success-probability model. | §IV-A |
+| Con-Fog | Delay ✓ | Proximity constraint (Eq. 6) minimizes distance "to reduce transmission latency"; Theorem on latency reduction; "Transmission Latency" is a primary evaluation metric. | §III-C, §IV-D, §V |
+| Con-Fog | Energy ✓ | Effective Residual Energy `E_eff` (Eq. 11) is a term of the utility `U_i,j` (Eq. 12); energy constraint (Eq. 5); "Energy Consumption" evaluated. | §III, §IV, §V |
+| Con-Fog | Cost ✓ | Explicit cost objective `arg min Z = ΣΣ c(u_i,f_j)·x_ij + Σ p(1−Σx_ij) − Σ E_j^{f,res}·x_ij` (Eq. 1) where `c(u_i,f_j)` is the communication cost and `p` the unassigned-UAV penalty. | §III-B |
+| Con-Fog | UAV ✓ | UAVs are the clients and the dynamic fog nodes of the FU-Serve platform. | §I, §III-A |
+| Con-Fog | Fog Selection ✓ | Consensus/social-choice fog node selection: utility values → per-UAV ranking → consensus ranking → selected fog node (Algorithm 1). | §IV-A |
+| Con-Fog | Distribution ✗ | What Algorithm 2 bin-packs is **UAVs**, not tasks: each UAV is assigned to one fog node under `Σ R_i^{u,req}·x_ij ≤ T·R_j^{f,cur}` (Eq. 4). No task, job, or workload of a UAV is ever split or scheduled across fog nodes, so the capacity-aware spread is a consequence of device association, not task distribution. | §III-C, §IV-B |
+| Con-Fog | Reliability ✗ | The link-quality index is SNR (Eqs. 9–10); "network reliability" appears only as a qualitative remark. No failure probability / availability / success-probability model. | §IV-A |
 | 2DP-FHS | Delay ✓ | Fog Delay Index `FDI = (PD + PrD + AQD)/D_net` (Eqs. 1–8) is one of the two selection objectives; Fig. 5 is a delay analysis over EEG/fog device counts. | §2.2.1, §3 |
 | 2DP-FHS | Fog Selection ✓ | 2D Pareto optimization over (FDI, FPI) with non-dominated solution space, utopia point, and trade-off function (Eq. 13) selects the Fog Head. | §2.2.2 |
 | 2DP-FHS | Fault Tolerance ✓ | "An additional fog device, called as Alternate Fog Head (AFH), is also chosen; which takes control of the FH **in case of failure**" — explicit backup head with failover. | §2.2.2 |
@@ -109,25 +109,31 @@ classification rules.
    heterogeneous fog nodes". But Eq. 10 evaluates each candidate head over the
    *whole* task set `T`, there is no assignment variable, and the conclusion defers
    "adaptive task scheduling mechanisms" to future work. Marked ✗.
-3. **Con-fog — Reliability (marked ✗).** The Effective Link Quality Index (Eq. 9),
+3. **Con-Fog — Distribution (marked ✗).** Reversed from an earlier ✓ on review.
+   Algorithm 2 is a genuine capacity-constrained best-fit allocation across
+   multiple fog nodes, and "number of unassigned UAVs" is an evaluated metric,
+   which is more machinery than any other selection-only paper here has. It is
+   marked ✗ because the unit allocated is a UAV, not a task: the definition asks
+   for tasks/workloads/jobs spread among computing nodes.
+4. **Con-Fog — Reliability (marked ✗).** The Effective Link Quality Index (Eq. 9),
    defined as SNR (Eq. 10), is used in the selection utility and is described as
    measuring "the robustness of the communication link", and the paper claims it
    enhances "overall network reliability". This is a channel-quality metric, not a
    reliability/failure/availability model, so it does not meet the stated criterion.
-4. **FU-Serve — Cost (marked ✗).** FU-Serve introduces a business model with a new
+5. **FU-Serve — Cost (marked ✗).** FU-Serve introduces a business model with a new
    "fog owner" actor, rent, and monetary profit. Nothing monetary is quantified or
    optimized (the GA maximizes `D = PCF + CCF`), so it fails the "distinct
    cost-related quantity or objective" test.
-5. **3D-POS — Fault Tolerance (marked ✓).** The backup device is explicit
+6. **3D-POS — Fault Tolerance (marked ✓).** The backup device is explicit
    (constraint C2 and Step 5), which satisfies the "backup or redundant nodes"
    criterion, but — unlike 2DP-FHS — the paper never states that the backup takes
    over on failure. The ✓ rests on the designation of a backup node alone.
-6. **Computation Offloading (UAV-based) — Fog Selection (marked ✗).** If the
+7. **Computation Offloading (UAV-based) — Fog Selection (marked ✗).** If the
    local/UAV/cloud offloading target choice is read as "server selection", this
    would flip to ✓. It is marked ✗ because there is only one UAV edge server, so
    no node is chosen from a candidate set; the binary variable `α_k(i)` schedules
    *users*, not nodes.
-7. **FU-Serve — Fault Tolerance (marked ✗).** Re-running the fog-node election
+8. **FU-Serve — Fault Tolerance (marked ✗).** Re-running the fog-node election
    after the elected node's energy depletes is a re-election trigger, not failure
    handling; no backup node, replication, or recovery is described.
 
